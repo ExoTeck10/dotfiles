@@ -3,7 +3,10 @@ packages:
     brews:
       - 'chezmoi'
       - 'fd'
+      - 'fzf'
+      - 'eza'
       - 'jq'
+      - 'zoxide'
       - 'lazygit'
       - 'neovim'
       - 'starship'
