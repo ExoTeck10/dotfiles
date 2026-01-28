@@ -1,0 +1,28 @@
+packages:
+  common:
+    brews:
+      - 'chezmoi'
+      - 'fd'
+      - 'jq'
+      - 'lazygit'
+      - 'neovim'
+      - 'starship'
+      - 'hashicorp/tap/terraform'
+      - 'tlrc'
+      - 'fluxcd/tap/flux'
+      - 'helm'
+      - 'kubernetes-cli'
+      - 'kubeseal'
+      - 'derailed/k9s/k9s'
+      - 'awscli'
+      - 'biome'
+      - 'skatkov/tap/devtui'
+    casks: []
+  linux:
+    brews:
+      - 'beancount-language-server'
+    casks: []
+  darwin:
+    brews: []
+    casks:
+      - ghostty

@@ -1,0 +1,62 @@
+return {
+
+  -- "gc" to comment visual regions/lines
+  -- {
+  --   'numToStr/Comment.nvim',
+  --   opts = {
+  --     mappings = { extra = false },
+  --   },
+  -- },
+  -- {
+  --   'olimorris/codecompanion.nvim',
+  --   dependencies = {
+  --     'nvim-lua/plenary.nvim',
+  --     'ravitemer/codecompanion-history.nvim',
+  --   },
+  --   keys = {
+  --     { '<leader>aa', '<cmd>CodeCompanionChat Toggle<cr>', desc = 'Toggle CodeCompanion Chat' },
+  --     { '<leader>ac', '<cmd>CodeCompanionActions<cr>', desc = 'Open the Action Palette' },
+  --     { '<leader>ah', '<cmd>CodeCompanionHistory<cr>', desc = 'Open the chat history browser' },
+  --     { '<leader>as', '<cmd>CodeCompanionSummaries<cr>', desc = 'Browse all summaries' },
+  --   },
+  --   opts = {
+  --     strategies = {
+  --       chat = {
+  --         adapter = 'mistral',
+  --         model = 'devstral-medium-2507',
+  --       },
+  --     },
+  --     extensions = {
+  --       history = {
+  --         enabled = true,
+  --         opts = {
+  --           auto_save = true,
+  --           save_chat_keymap = 'sc',
+  --           picker = 'snacks',
+  --           picker_keymaps = {
+  --             rename = { n = 'r' },
+  --             delete = { n = 'd' },
+  --             duplicate = { n = '<C-y>' },
+  --           },
+  --           auto_generate_title = true,
+  --           continue_last_chat = true,
+  --           dir_to_save = vim.fn.stdpath 'data' .. '/codecompanion-history',
+  --           summary = {
+  --             create_summary_keymap = 'gcs',
+  --             browse_summaries_keymap = 'gbs',
+  --           },
+  --           memory = {
+  --             auto_create_memories_on_summary_generation = true,
+  --             vectorcode_exe = 'vectorcode',
+  --             tool_opts = {
+  --               default_num = 10,
+  --             },
+  --             notify = true,
+  --             index_on_startup = false,
+  --           },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
+}

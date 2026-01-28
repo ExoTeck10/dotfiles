@@ -1,0 +1,18 @@
+{{- $isServer := promptBoolOnce . "server" "Is this a server?" false}}
+
+[data]
+    server = {{ $isServer }}
+{{- if $isServer | not }}
+{{- $name := promptStringOnce . "name" "What is your name?" }}
+{{- $email := promptStringOnce . "email" "What is your email address?" }}
+    name = {{ $name | quote }}
+    email = {{ $email | quote }}
+    ssh = "~/.ssh/id_ed25519.pub"
+{{- end }}
+
+[git]
+    autoCommit = true
+    autoPush = true
+
+[diff]
+  exclude = ["externals"]

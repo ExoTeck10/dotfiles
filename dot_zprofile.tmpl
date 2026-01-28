@@ -1,0 +1,20 @@
+#############################################
+# Environment variables exported to the shell
+#############################################
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Remove user name from the promt
+export DEFAULT_USER={{ .chezmoi.username }}
+
+# Set the default editor
+#export EDITOR="code --wait"
+export EDITOR="nvim"
+
+{{- if eq .chezmoi.os "darwin" }}
+#export GPG_TTY=$(tty)
+
+# Disable shared history between shells
+unsetopt inc_append_history
+unsetopt share_history
+{{- end }}

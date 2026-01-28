@@ -1,0 +1,30 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /home/jeremy/.config/ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+font-size = 10
+font-feature = -liga
+font-thicken = true
+# font-family = "Opus One"
+
+background-opacity = 0.8
+background-blur = true
+
+shell-integration-features = ssh-terminfo,ssh-env,cursor,sudo,title
+desktop-notifications = false
+keybind = performable:ctrl+c=copy_to_clipboard
+keybind = performable:ctrl+v=paste_from_clipboard
+keybind = shift+enter=text:\x1b\r

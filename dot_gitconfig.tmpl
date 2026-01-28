@@ -1,0 +1,93 @@
+[user]
+	name = {{ .name }}
+	email = {{ .email }}
+	signingkey = {{ .ssh }}
+
+[core]
+	compression = 9
+	whitespace = error
+	preloadindex = true
+
+[advice]
+	addEmptyPathspec = false
+	pushNonFastForward = false
+	statusHints = false
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = -taggerdate
+
+[gpg]
+	format = ssh
+
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+	showStash = true
+
+[log]
+	abbrevCommit = true
+	graphColors = blue,yellow,cyan,magenta,green,red
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
+[interactive]
+	singlekey = true
+
+[commit]
+	gpgsign = true
+
+[fetch]
+	prune = true
+
+[pull]
+	default = current
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
+
+[color "branch"]
+	current = magenta
+	local = default
+	remote = yellow
+	upstream = green
+	plain = blue
+
+[color "decorate"]
+	HEAD = red
+	branch = blue
+	tag = yellow
+	remoteBranch = magenta
+
+[color "diff"]
+	frag = magenta
+	context = white
+	whitespace = yellow reverse
+	old = red
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+
+[url "ssh://git@gitlab.com"]
+	insteadOf = https://gitlab.com
+
+[includeIf "gitdir:~/dev/jprbc/**"]
+  path = "~/dev/jprbc/.gitconfig"
