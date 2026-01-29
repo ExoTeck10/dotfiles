@@ -54,9 +54,6 @@ fpath+="$(brew --prefix)/share/zsh/site-functions"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 {{- end }}
 
-# https://mise.jdx.dev
-# eval "$(mise activate zsh)"
-
 
 #############################################
 # Run Oh-My-ZSH configuration
@@ -68,6 +65,9 @@ source $ZSH/oh-my-zsh.sh
 # Completion
 #############################################
 complete -o nospace -C $(brew --prefix)/bin/terraform terraform
+eval "$(mise activate zsh)"
+eval "$(uv generate-shell-completion zsh)" 
+eval "$(uvx  --generate-shell-completion zsh)" 
 
 
 #############################################

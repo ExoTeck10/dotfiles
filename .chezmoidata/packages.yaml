@@ -19,6 +19,7 @@ packages:
       - 'derailed/k9s/k9s'
       - 'awscli'
       - 'uv'
+      - 'mise'
       - 'biome'
       - 'skatkov/tap/devtui'
     casks: []
