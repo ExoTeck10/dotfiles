@@ -18,6 +18,7 @@ packages:
       - 'kubeseal'
       - 'derailed/k9s/k9s'
       - 'awscli'
+      - 'uv'
       - 'biome'
       - 'skatkov/tap/devtui'
     casks: []
