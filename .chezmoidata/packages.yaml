@@ -22,7 +22,10 @@ packages:
       - 'mise'
       - 'biome'
       - 'skatkov/tap/devtui'
-    casks: []
+    casks: 
+      - 'font-jetbrains-mono-nerd-font'
+      - 'font-sauce-code-pro-nerd-font'
+      - 'font-hack-nerd-font'
   linux:
     brews:
       - 'beancount-language-server'
