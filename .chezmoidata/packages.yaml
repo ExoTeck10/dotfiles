@@ -26,6 +26,8 @@ packages:
       - 'font-jetbrains-mono-nerd-font'
       - 'font-sauce-code-pro-nerd-font'
       - 'font-hack-nerd-font'
+      - 'font-maple-mono'
+      - 'font-maple-mono-nf'
   linux:
     brews:
       - 'beancount-language-server'
