@@ -9,6 +9,7 @@ packages:
       - 'zoxide'
       - 'lazygit'
       - 'neovim'
+      - 'tree-sitter-cli'
       - 'starship'
       - 'hashicorp/tap/terraform'
       - 'tlrc'
@@ -21,6 +22,9 @@ packages:
       - 'uv'
       - 'mise'
       - 'biome'
+      - 'ruff'
+      - 'stylua'
+      - 'yaml-language-server'
       - 'skatkov/tap/devtui'
     casks: 
       - 'font-jetbrains-mono-nerd-font'
